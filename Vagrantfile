@@ -32,6 +32,9 @@ Vagrant.configure(2) do |config|
   # boxes at https://atlas.hashicorp.com/search.
   config.vm.box = "ubuntu/trusty32"
   config.vm.hostname = "stm32-dev"
+
+  config.vm.synced_folder "../", "/projects/"
+
   # Setup rule to automatically attach ST Link v2.1 Debugger when plugging in Nucleo board
   config.vm.provider :virtualbox do |vb|
 # vb.customize ['modifyvm', :id, '--usb', 'on']

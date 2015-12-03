@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
 mkdir downloads
-mkdir /vagrant/utils
-ln -s /vagrant/utils ./utils
+mkdir /vagrant/
+ln -s /vagrant/ ./shared
 
 #### General development tools ####
 apt-get update
